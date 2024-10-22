@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* BACKGROUND VIDEO */
+.backVideo{
+    position:absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .backVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* NAVIGATION BAR */
+header {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    backdrop-filter: contrast(45%);
+}
+
+header .mainNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    backdrop-filter: contrast(10%);
+}
+
+header .buttons{
+    display: flex;
+    justify-content: right;
+
+}
+
+header .logo img{
+    cursor: pointer;
+}
+
+header .mainNav nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header .mainNav nav ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+    
+header .mainNav nav ul li a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.542);
+    padding-top: 25px;
+    transition:step-start 0.3s;
+}
+
+header .mainNav nav ul li a:hover{
+    border-top: 10px solid aqua;
+    color: white;
+    text-shadow: 0 0 20px aqua;
+}
+
+header .buttons .download{
+    padding: 26px 50px 26px;
+    border: 0px;
+    background-color: rgb(221, 187, 37);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(64, 53, 53);
+}
+
+header .buttons .login{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.314);
+}
+
+header .buttons .login:hover{
+    color: aliceblue;
+}
+
+/* MAIN TEXT */
+section .mainText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    color: aliceblue;
+}
